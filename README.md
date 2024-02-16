@@ -64,7 +64,9 @@ To run this project, ensure the following dependencies are added to the `pom.xml
 
 ## Contributors
 
-Feel free to contribute to this project by submitting pull requests or reporting issues.
+https://github.com/jlabinska
+
+<p> Feel free to contribute to this project by submitting pull requests or reporting issues. </p>
 
 ## License
 
