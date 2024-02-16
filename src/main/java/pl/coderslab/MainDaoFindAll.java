@@ -9,15 +9,15 @@ public class MainDaoFindAll {
 
   public static void main(String[] args) {
 
-
     UserDao userDao = new UserDao();
     User[] allUsers = userDao.findAll();
-    for(int i = 0; i < allUsers.length; i++) {
-      System.out.println("User[" + i + "] = {id = " + allUsers[i].getId() + ", username = " + allUsers[i].getUserName());  // z tablicy allUsers wyswietla element pod indeksem "i"
-
+    /*for (int i = 0; i < allUsers.length; i++) {
+      System.out.println("User[" + i + "] = {id: " + allUsers[i].getId() + ", username: "
+          + allUsers[i].getUserName() + ", email: " + allUsers[i].getEmail() + ", password: "
+          + allUsers[i].getPassword());*/
+    for (User u : allUsers) {
+      System.out.println(u);
     }
-
-
 
   }
 }

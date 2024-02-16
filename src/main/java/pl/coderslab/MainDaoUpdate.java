@@ -9,14 +9,14 @@ public class MainDaoUpdate {
 
   public static void main(String[] args) {
 
-    User user = new User();
-    user.setId(1);
-    user.setUserName("Asia");
-    user.setEmail("blabla@gmail.com");
-    user.setPassword("piesek13");
-
     UserDao userDao = new UserDao();
-    userDao.update(user);
+    User userToUpdate = userDao.read(1);
+
+    userToUpdate.setUserName("Joasia");
+    userToUpdate.setEmail("assia@gmail.com");
+    userToUpdate.setPassword("piesek13");
+
+    userDao.update(userToUpdate);
 
 
   }
